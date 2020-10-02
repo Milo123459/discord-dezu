@@ -5,7 +5,7 @@ class DezuClient extends Client {
     private dezu: ClientDezu;
     public constructor (options: ClientOptions) {
         super(options.clientOptions ? options.clientOptions : {});
-        this.dezu.options = defaults(options, { owners: [], clientOptions: {} })
+        this.dezu.options = defaults(options, { owners: [], clientOptions: {}, useDezuLogger: true });
     };
     public start(): void {
         
