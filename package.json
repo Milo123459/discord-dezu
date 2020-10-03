@@ -20,6 +20,7 @@
     "log-symbols": "^4.0.0"
   },
   "scripts": {
-    "git": "git-go"
+    "git": "git-go",
+    "lint": "prettier --write ."
   }
 }
