@@ -27,9 +27,3 @@ class DezuClient extends Client {
 	}
 }
 export default DezuClient;
-new DezuClient({
-	commandHandler: { path: '' },
-	token: '',
-	prefix: '',
-	//useDezuLogger: true,
-}).start();
