@@ -11,12 +11,12 @@ class DezuClient extends Client {
 			clientOptions: {},
 			useDezuLogger: false,
 		});
-        this.dezu.logger = new Logger(this.dezu.options.useDezuLogger);
-        this.dezu.forceLogger = new Logger(true);
+		this.dezu.logger = new Logger(this.dezu.options.useDezuLogger);
+		this.dezu.forceLogger = new Logger(true);
 	}
 	public start(): void {
-        this.dezu.logger.info(`Booting up..`);
-        
+		this.dezu.logger.info(`Booting up..`);
+
 		this.login(this.dezu.options.token)
 			.then(() => this.dezu.logger.info(`Logging in...`))
 			.catch((reason) => {

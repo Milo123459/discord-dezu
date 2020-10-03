@@ -54,6 +54,6 @@ export interface Anything {
 }
 export interface Dezu {
 	logger?: Logger;
-    options?: ClientOptions;
-    forceLogger?: Logger
+	options?: ClientOptions;
+	forceLogger?: Logger;
 }
